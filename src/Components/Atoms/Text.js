@@ -1,12 +1,13 @@
 import React from 'react';
+import {render} from "@testing-library/react";
 
-function Text({htmltag}) {
+function Text({Htmltag}) {
     // TODO - add properties
     // font - color - fontsize - fontweight - lineheight - HTMLTag - alignement
 
     return (
-        <htmltag></htmltag>
-    );
+        <Htmltag></Htmltag>
+    )
 }
 
 export default Text;
