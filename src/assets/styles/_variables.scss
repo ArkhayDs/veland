@@ -10,6 +10,8 @@ $globals-highlight-dark: #13447C;
 $dark-primary: #162331;
 $dark-primary-light: #26394C;
 $dark-primary-dark: #0E161E;
+$text-color: #fff;
+
 
 $alert-colors: (
   "success": #244d1d,
@@ -20,7 +22,19 @@ $alert-colors: (
 // Dark Theme -- END
 //
 
+body {
+  color: $text-color;
+  background-color: $dark-primary;
+}
 
+a {
+  color: $globals-highlight;
+}
+
+button {
+  color: $text-color;
+  background-color: $globals-highlight;
+}
 
 .alert {
   background-color: map.get($alert-colors, "success");

@@ -1,3 +1,17 @@
+body {
+  color: #fff;
+  background-color: #162331;
+}
+
+a {
+  color: #71A9EA;
+}
+
+button {
+  color: #fff;
+  background-color: #71A9EA;
+}
+
 .alert {
   background-color: #244d1d;
 }

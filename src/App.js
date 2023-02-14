@@ -1,15 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-import Text from "./Components/Atoms/Text";
+import './assets/styles/index.css';
+import React, { Component }  from "react";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Login from "./Components/Pages/Login";
+import Register from "./Components/Pages/Register";
+import Home from "./Components/Pages/Home";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Text Htmltag={"h2"}>Coucou</Text>
-      </header>
-    </div>
-  );
+
+    return (
+        <>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home />}/>
+                    <Route path="/login" element={<Login />}/>
+                    <Route path="/register" element={<Register />}/>
+                </Routes>
+            </BrowserRouter>
+        </>
+    );
 }
 
 export default App;
