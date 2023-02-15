@@ -1,6 +1,6 @@
 import './assets/styles/index.css';
-import React, { Component }  from "react";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import React, { Component } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./Components/Pages/Login";
 import Home from "./Components/Pages/Home";
 
@@ -11,9 +11,9 @@ function App() {
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home />}/>
-                    <Route path="/login" element={<Login isLogin={true} />}/>
-                    <Route path="/register" element={<Login isLogin={false} />}/>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/login" element={<Login isLogin={true} />} />
+                    <Route path="/register" element={<Login isLogin={false} />} />
                 </Routes>
             </BrowserRouter>
         </>

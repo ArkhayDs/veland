@@ -1,25 +1,21 @@
 @use "sass:map";
 
 // Highlighted items
-$globals-highlight: #71A9EA;
-$globals-highlight-light: #B8D4F4;
-$globals-highlight-dark: #13447C;
+$globals-highlight: #71a9ea;
+$globals-highlight-light: #b8d4f4;
+$globals-highlight-dark: #13447c;
 
 // Dark Theme - START
 $dark-primary: #162331;
-$dark-primary-light: #26394C;
-$dark-primary-dark: #0E161E;
+$dark-primary-light: #26394c;
+$dark-primary-dark: #0e161e;
 $text-color: #fff;
 
-
-
-
-
 $alert-colors: (
-        "success": #244d1d,
-        "info": #1ba89c,
-        "warning": #d2a614,
-        "error": #b61f1f
+  "success": #244d1d,
+  "info": #1ba89c,
+  "warning": #d2a614,
+  "error": #b61f1f,
 );
 // Dark Theme -- END
 //
