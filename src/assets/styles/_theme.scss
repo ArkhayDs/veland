@@ -1,0 +1,5 @@
+@use 'molecules/button';
+
+@mixin my-theme($theme) {
+  @include button.my-button-molecule($theme);
+}

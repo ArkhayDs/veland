@@ -1,11 +1,10 @@
 import React from 'react';
 
-function Stack({Htmltag}) {
+function Stack({Htmltag, children}) {
     // TODO - Add properties (space/divider/etc)
 
     return (
-        <Htmltag></Htmltag>
+        <Htmltag>{children}</Htmltag>
     );
 }
-
 export default Stack;

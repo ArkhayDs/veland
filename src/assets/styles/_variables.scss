@@ -5,7 +5,6 @@ $globals-highlight: #71A9EA;
 $globals-highlight-light: #B8D4F4;
 $globals-highlight-dark: #13447C;
 
-//
 // Dark Theme - START
 $dark-primary: #162331;
 $dark-primary-light: #26394C;
@@ -13,11 +12,14 @@ $dark-primary-dark: #0E161E;
 $text-color: #fff;
 
 
+
+
+
 $alert-colors: (
-  "success": #244d1d,
-  "info": #1ba89c,
-  "warning": #d2a614,
-  "error": #b61f1f
+        "success": #244d1d,
+        "info": #1ba89c,
+        "warning": #d2a614,
+        "error": #b61f1f
 );
 // Dark Theme -- END
 //

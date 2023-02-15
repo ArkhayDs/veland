@@ -1,0 +1,10 @@
+@use "sass:map";
+
+$theme-dark: (
+        'colors': (
+                'primary': #162331,
+                'primary-light': #26394C,
+                'primary-dark': #0E161E,
+                'text' : #fff,
+        ),
+);

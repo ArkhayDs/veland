@@ -9,7 +9,7 @@ export default function Button({displayIcon,displayText, Htmltag, content, type,
     return (
         <button type={type}>
             <Icon></Icon>
-            <Text Htmltag={Htmltag} content={content}></Text>
+            <Text Htmltag={Htmltag}>{content}</Text>
         </button>
     );
 };

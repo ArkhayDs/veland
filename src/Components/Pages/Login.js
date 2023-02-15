@@ -2,8 +2,11 @@ import React from 'react';
 import Text from "../Atoms/Text";
 import Link from "../Atoms/Link";
 import Form from "../Organisms/Form";
+import Stack from "../Atoms/Stack";
 
-function Login() {
+function Login(isLogin) {
+    const login = isLogin.isLogin
+
     const loginInputs = [
         {
             key:0, content: "Email", type:"text", placeholder: "Email", htmlfor: "Email"
@@ -14,13 +17,17 @@ function Login() {
     ]
 
     return (
-        <div>
-            <Text Htmltag={"h1"} content={"Login"}></Text>
-            <Text Htmltag={"span"} content={"Not signed up ?"}></Text>
-            <Link href={"/register"} content={"Register"}></Link>
+        <Stack Htmltag={"div"}>
+            <Stack Htmltag={"div"}>
+                <Text Htmltag={"h1"}>{login ? 'Login' : 'Register'}</Text>
+                <Text Htmltag={"span"}>{login ? 'Not Signed Up ?' : 'Already an account ?'}</Text>
+                <Link href={login ? "/register" : "/login"}>{login ? 'Register' : 'Login'}</Link>
+            </Stack>
 
-            <Form buttonHtmltag={"span"} buttonContent={"Login"} inputList={loginInputs} isLogin={true}></Form>
-        </div>
+            <Stack Htmltag={"div"}>
+                <Form buttonHtmltag={"span"} buttonContent={login ? "Login" : "Register"} inputList={loginInputs} isLogin={login}></Form>
+            </Stack>
+        </Stack>
     );
 }
 
