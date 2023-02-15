@@ -1,19 +1,19 @@
 @use "sass:map";
 
-$font-style : normal;
+$font-style: normal;
 $font-primary: 'Readex Pro';
-$font-weight-primary : 400;
-$font-weight-secondary : 300;
+$font-weight-primary: 400;
+$font-weight-secondary: 300;
 
 $theme-font: (
         'title': (
                 'family': $font-primary,
                 'style': $font-style,
                 'weight': $font-weight-primary,
-                'size' :  32px,
+                'size' : 32px,
                 'height' : 40px,
         ),
-        'subt-title': (
+        'subTitle': (
                 'family': $font-primary,
                 'style': $font-style,
                 'weight': $font-weight-secondary,
@@ -27,11 +27,11 @@ $theme-font: (
                 'size' : 20px,
                 'height' : 25px,
         ),
-        'subt-text': (
+        'subText': (
                 'family': $font-primary,
                 'style': $font-style,
                 'weight': $font-weight-secondary,
-                'size' : 14px,
-                'height' : 18px,
-        ),
+                'size': 14px,
+                'height': 18px,
+        )
 );

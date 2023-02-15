@@ -1,0 +1,22 @@
+@use "sass:map";
+
+$theme: (
+        'highlight': (
+                'default': #71A9EA,
+                'light': #B8D4F4,
+                'dark': #13447C
+        ),
+        'success': (
+                'default': #5AE54D,
+                'light': #BDF4B8,
+                'dark': #1B7C13
+        ),
+        'error' : (
+                'default': #E54D4D,
+                'light': #F4B8B8,
+                'dark':  #7C1313
+        )
+);
+
+
+
