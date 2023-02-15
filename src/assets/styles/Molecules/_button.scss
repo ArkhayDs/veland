@@ -1,8 +1,8 @@
 @mixin my-button-molecule($theme) {
-  $colors: map-get($theme, 'colors');
+  $colors: map-get($theme, "colors");
 
   .button {
-    background-color: map-get($colors, 'backgroundColor');
-    color: map-get($colors, 'defaultColor');
+    background-color: map-get($colors, "backgroundColor");
+    color: map-get($colors, "defaultColor");
   }
 }
