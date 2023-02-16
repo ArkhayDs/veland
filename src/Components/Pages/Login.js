@@ -1,11 +1,11 @@
-import React from 'react';
-import Text from "../Atoms/Text";
-import Link from "../Atoms/Link";
-import Form from "../Organisms/Form";
-import Stack from "../Atoms/Stack";
+import React, {useState} from 'react';
+import Text from "../Atoms/Text/Text";
+import Form from "../Organisms/Form/Form";
+import Stack from "../Atoms/Stack/Stack";
+import QrCode from "../Molecules/QrCode/QrCode";
 
-function Login(isLogin) {
-    const login = isLogin.isLogin
+function Login() {
+    const [login, setLogin] = useState(true)
 
     const loginInputs = [
         {
@@ -16,18 +16,24 @@ function Login(isLogin) {
         }
     ]
 
-    return (
-        <Stack Htmltag={"div"}>
-            <Stack Htmltag={"div"}>
-                <Text Htmltag={"h1"}>{login ? 'Login' : 'Register'}</Text>
-                <Text Htmltag={"span"}>{login ? 'Not Signed Up ?' : 'Already an account ?'}</Text>
-                <Link href={login ? "/register" : "/login"}>{login ? 'Register' : 'Login'}</Link>
-            </Stack>
+    const handleClick = e => {
+        setLogin(!login)
+    }
 
-            <Stack Htmltag={"div"}>
-                <Form buttonHtmltag={"span"} buttonContent={login ? "Login" : "Register"} inputList={loginInputs} isLogin={login}></Form>
+    return (
+        <section className={"Identification"}>
+            <Stack Htmltag={"div"} classCustom={"Form_Container"}>
+                <Stack Htmltag={"div"} classCustom={"Form_Infos"}>
+                    <Text Htmltag={"h1"}>{login ? 'Login' : 'Register'}</Text>
+                    <Text Htmltag={"p"}>{login ? 'Not Signed Up ?' : 'Already an account ?'} <a onClick={() => handleClick()}>{login ? 'Register' : 'Login'}</a></Text>
+                </Stack>
+
+                <Stack Htmltag={"div"}>
+                    <Form buttonHtmltag={"span"} buttonContent={login ? "Login" : "Register"} inputList={loginInputs} isLogin={login}></Form>
+                </Stack>
             </Stack>
-        </Stack>
+            <QrCode/>
+        </section>
     );
 }
 

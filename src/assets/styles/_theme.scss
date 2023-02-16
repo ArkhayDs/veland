@@ -1,7 +1,12 @@
-@use "molecules/button";
-@use "molecules/alert";
+@use "../../Components/Molecules/Button/button";
+@use "../../Components/Molecules/Alert/alert";
+@use "../../Components/Molecules/InputGroup/inputGroup";
+@use "../../Components/Molecules/InputPassword/inputPassword";
 
 @mixin my-theme($theme) {
   @include button.button-molecule($theme);
-  @include alert.alert-molecule($theme)
+  @include alert.alert-molecule($theme);
+  @include inputGroup.inputGroup-molecule($theme, $theme-font, $type-font-label , $type-font-input);
+  @include inputPassword.inputGroup-molecule($theme, $theme-font, $type-font-label , $type-font-input, $type-font-link, $text-decoration);
 }
+

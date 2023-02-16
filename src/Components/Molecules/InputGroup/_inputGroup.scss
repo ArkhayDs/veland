@@ -1,8 +1,7 @@
-@mixin my-input-group-molecule($theme, $theme-font, $type-font-label , $type-font-input) {
+@mixin input-group-molecule($theme, $theme-font, $type-font-label , $type-font-input) {
   $colors: map-get($theme, "colors");
 
   .input_group{
-
     label {
       @include my-text-atom($theme, $theme-font, $type-font-label)
     }

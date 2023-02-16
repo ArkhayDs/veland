@@ -8,5 +8,9 @@
     font-weight: map-get($font, "weight");
     font-size: map-get($font, "size");
     line-height: map-get($font, "height");
+
+    @if $text-decoration == none {
+      text-decoration: none;
+    }
   }
 }

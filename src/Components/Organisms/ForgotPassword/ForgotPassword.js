@@ -1,8 +1,7 @@
 import React from 'react';
-import Icon from "../Atoms/Icon";
-import Text from "../Atoms/Text";
-import Stack from "../Atoms/Stack";
-import InputGroup from "../Molecules/InputGroup";
+import Stack from "../../Atoms/Stack/Stack";
+import Icon from "../../Atoms/Icon/Icon";
+import Text from "../../Atoms/Text/Text";
 
 function ForgotPassword(props) {
     return (

@@ -1,9 +1,8 @@
 import React from 'react';
-import Icon from "../Atoms/Icon";
-import Text from "../Atoms/Text";
-import Button from "./Button";
-import Stack from "../Atoms/Stack";
-
+import Icon from "../../Atoms/Icon/Icon";
+import Stack from "../../Atoms/Stack/Stack";
+import Text from "../../Atoms/Text/Text";
+import Button from "../Button/Button";
 function Alert(props) {
     // TODO - Add properties
     // type (success/error/warning/infos) - color - bgcolor - float - buttons

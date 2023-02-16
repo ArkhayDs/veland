@@ -1,8 +1,8 @@
 import React from 'react';
-import Button from "../Molecules/Button";
-import InputGroup from "../Molecules/InputGroup";
-import Stack from "../Atoms/Stack";
-import InputPassword from "../Molecules/InputPassword";
+import Stack from "../../Atoms/Stack/Stack";
+import Button from "../../Molecules/Button/Button";
+import InputPassword from "../../Molecules/InputPassword/InputPassword";
+import InputGroup from "../../Molecules/InputGroup/InputGroup";
 
 function Form({buttonHtmltag,buttonContent, inputList, isLogin}) {
 
@@ -22,13 +22,9 @@ function Form({buttonHtmltag,buttonContent, inputList, isLogin}) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <Stack Htmltag={"div"}>
-                {input_groups}
-            </Stack>
-            <Stack Htmltag={"div"}>
-                <Button Htmltag={buttonHtmltag} type={"submit"} content={buttonContent}/>
-            </Stack>
+        <form onSubmit={handleSubmit} className={"Form_Inputs"}>
+            {input_groups}
+            <Button Htmltag={buttonHtmltag} type={"submit"} content={buttonContent}/>
         </form>
     );
 }

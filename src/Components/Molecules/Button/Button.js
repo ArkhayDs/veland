@@ -1,14 +1,13 @@
 import React from 'react';
-import Text from "../Atoms/Text";
-import Icon from "../Atoms/Icon";
+import Icon from "../../Atoms/Icon/Icon";
+import Text from "../../Atoms/Text/Text";
 
-export default function Button({displayIcon,displayText, Htmltag, content, type, iconName}) {
+export default function Button({Htmltag, content, type}) {
     // TODO - add Ternary for Icon & Text displays (booleen) + add properties
     // flextype - order - button alignement/position - paddings - margins - border - size
 
     return (
         <button type={type}>
-            <Icon></Icon>
             <Text Htmltag={Htmltag}>{content}</Text>
         </button>
     );

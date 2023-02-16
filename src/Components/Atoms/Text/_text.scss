@@ -1,4 +1,4 @@
-@mixin my-text-atom($theme, $theme-font, $type-font) {
+@mixin text-atom($theme, $theme-font, $type-font) {
 
   $font: map-get($theme-font, $type-font);
   $text: map-get($theme, "text");

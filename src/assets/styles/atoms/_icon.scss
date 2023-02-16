@@ -1,5 +1,0 @@
-@mixin my-icon-atom($theme, $weight, $height , $width) {
-  .icon {
-    color: map-get($theme, "title");
-  }
-}

@@ -1,4 +1,4 @@
-@mixin my-button-molecule($theme,$theme-font, $type-font-input) {
+@mixin button-molecule($theme,$theme-font, $type-font) {
   $colors: map-get($theme, "colors");
   //Todo set variable
 
@@ -6,10 +6,10 @@
     background-color: map-get($colors, "backgroundColor");
     color: map-get($colors, "defaultColor");
     i {
-
+      @include my-icon-atom($theme, $weight, $height , $width)
     }
     .text {
-      @include my-text-atom($theme, $theme-font, $type-font-input)
+      @include my-text-atom($theme, $theme-font, $type-font)
     }
 
 
