@@ -3,8 +3,27 @@
   //Todo set variable
 
   .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 40px;
+    gap: 8px;
+
     background-color: map-get($colors, "backgroundColor");
     color: map-get($colors, "defaultColor");
+    border-radius: 5px;
+
+    :hover {
+      background: #13447C;
+      cursor: pointer;
+    }
+
+    :active {
+      background: #13447C;
+      border: 3px solid #4D93E5;
+    }
+
     i {
       @include my-icon-atom($theme, $weight, $height , $width)
     }

@@ -3,7 +3,8 @@ import Stack from "../../Atoms/Stack/Stack";
 import Icon from "../../Atoms/Icon/Icon";
 import Text from "../../Atoms/Text/Text";
 
-function ForgotPassword(props) {
+function ForgotPassword() {
+
     return (
         <>
             <Stack Htmltag={"div"}>

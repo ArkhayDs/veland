@@ -4,6 +4,7 @@ import Image from "../../Atoms/Image/Image";
 import Text from "../../Atoms/Text/Text";
 
 function QrCode() {
+
     return (
         <Stack Htmltag={"div"} classCustom="Qr_Container">
             <Image name={"QrCode"}/>

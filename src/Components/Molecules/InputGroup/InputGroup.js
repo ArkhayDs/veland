@@ -4,8 +4,6 @@ import Input from "../../Atoms/Input/Input";
 import Stack from "../../Atoms/Stack/Stack";
 
 function InputGroup({content, type, placeholder, htmlfor, inputName}) {
-    // TODO - add props to Text & Input + add properties
-    // displayLabel booleen (with Ternary)
 
     return (
         <Stack Htmltag={"div"} classCustom={"Input_Group"}>

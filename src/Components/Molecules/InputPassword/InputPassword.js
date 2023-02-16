@@ -6,8 +6,6 @@ import Input from "../../Atoms/Input/Input";
 import Icon from "../../Atoms/Icon/Icon";
 
 function InputPassword({type, placeholder, htmlfor, content, inputName}) {
-    // TODO - add props to Text & Input + add properties
-    // displayLabel booleen (with Ternary)
 
     return (
         <Stack Htmltag={"div"} classCustom={"Input_Group"}>

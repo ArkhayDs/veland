@@ -2,11 +2,53 @@
   $colors: map-get($theme, "colors");
 
   .input_group{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
     label {
       @include my-text-atom($theme, $theme-font, $type-font-label)
     }
-    input {
-      @include my-text-atom($theme, $theme-font, $type-font-input)
+
+    .Input {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 24px;
+      gap: 8px;
+      color: white;
+
+      background: #26394C;
+      border-radius: 5px;
+
+      :focus-within {
+        border: 3px solid #4D93E5;
+        background: #13447C;
+      }
+
+      :hover {
+        background: #13447C;
+      }
+
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      input {
+        border: none;
+        background: transparent;
+        color: white;
+        width: 100%;
+        @include my-text-atom($theme, $theme-font, $type-font-input);
+
+        :focus {
+          outline: none;
+        }
+      }
     }
   }
 }

@@ -1,0 +1,59 @@
+.Identification {
+  border-radius: 5px;
+  padding: 40px;
+  background: #0E161E;
+  display: flex;
+  gap: 160px;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-out;
+
+
+  .From_Container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+
+    .Form_Infos {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+
+    .Qr_Container {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      gap: 40px;
+
+      img {
+        width: 250px;
+        border-radius: 5px;
+      }
+
+      .Qr_infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .Qr_Container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Identification {
+    width: 100vw;
+    height: 100vh;
+  }
+}
