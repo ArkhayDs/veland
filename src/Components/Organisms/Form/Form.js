@@ -1,5 +1,4 @@
 import React from 'react';
-import Stack from "../../Atoms/Stack/Stack";
 import Button from "../../Molecules/Button/Button";
 import InputPassword from "../../Molecules/InputPassword/InputPassword";
 import InputGroup from "../../Molecules/InputGroup/InputGroup";

@@ -22,10 +22,10 @@ function Login() {
 
     return (
         <section className={"Identification"}>
-            <Stack Htmltag={"div"} classCustom={"Form_Container"}>
+            <Stack Htmltag={"div"} classCustom={"From_Container"}>
                 <Stack Htmltag={"div"} classCustom={"Form_Infos"}>
                     <Text Htmltag={"h1"}>{login ? 'Login' : 'Register'}</Text>
-                    <Text Htmltag={"p"}>{login ? 'Not Signed Up ?' : 'Already an account ?'} <a onClick={() => handleClick()}>{login ? 'Register' : 'Login'}</a></Text>
+                    <Text Htmltag={"p"}>{login ? 'Not Signed Up ?' : 'Already an account ?'} <span onClick={() => handleClick()}>{login ? 'Register' : 'Login'}</span></Text>
                 </Stack>
 
                 <Stack Htmltag={"div"}>

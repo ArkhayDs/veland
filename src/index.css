@@ -79,6 +79,13 @@ main {
   gap: 24px;
 }
 
+.Form_Infos span {
+  color: #4D93E5;
+}
+.Form_Infos span:hover {
+  cursor: pointer;
+}
+
 .Form_Inputs {
   display: flex;
   flex-direction: column;
@@ -107,7 +114,7 @@ textarea:focus, input:focus{
 .Input:hover {
   background: #13447C;
 }
-span {
+.Input span {
   display: flex;
   justify-content: center;
   align-items: center;
