@@ -1,5 +1,7 @@
 @use "molecules/button";
+@use "molecules/alert";
 
 @mixin my-theme($theme) {
-  @include button.my-button-molecule($theme);
+  @include button.button-molecule($theme);
+  @include alert.alert-molecule($theme)
 }

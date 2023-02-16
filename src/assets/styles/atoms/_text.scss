@@ -1,0 +1,12 @@
+@mixin my-text-atom($theme, $theme-font, $type-font) {
+
+  $font: map-get($theme-font, $type-font);
+  $text: map-get($theme, "text");
+
+    font-family: map-get($font, "title");
+    font-style: map-get($font, "style");
+    font-weight: map-get($font, "weight");
+    font-size: map-get($font, "size");
+    line-height: map-get($font, "height");
+    color: map-get($text, "default")
+}

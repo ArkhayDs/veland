@@ -1,8 +1,0 @@
-@use 'configs/config';
-@use 'configs/configDark';
-@use 'theme';
-
-@include theme.my-theme(config.$theme);
-.dark {
-  @include theme.my-theme(configDark.$theme-dark);
-}

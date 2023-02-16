@@ -1,0 +1,5 @@
+@mixin my-image-atom($theme, $weight, $height , $width) {
+  .image {
+    color: map-get($theme, "title");
+  }
+}

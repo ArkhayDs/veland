@@ -1,0 +1,10 @@
+@use "./button";
+
+@mixin my-alert-molecule( $theme ) {
+    $colors: map-get($theme, "colors");
+    .alert {
+        background-color: map-get($colors, "backgroundColor");
+        color: map-get($colors, "defaultColor");
+        @include my-button-molecule($theme);
+    }
+}

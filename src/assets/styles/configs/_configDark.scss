@@ -6,5 +6,18 @@ $theme-dark: (
                 'primary-light': #26394C,
                 'primary-dark': #0E161E,
                 'text': #fff,
+        ),
+        'success': (
+                'default': #5AE54D,
+                'light': #BDF4B8,
+                'dark': #1B7C13
+        ),
+        'error': (
+                'default': #E54D4D,
+                'light': #F4B8B8,
+                'dark':  #7C1313
+        ),
+        'text': (
+                'default': #ffff,
         )
 );

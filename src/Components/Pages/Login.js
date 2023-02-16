@@ -9,10 +9,10 @@ function Login(isLogin) {
 
     const loginInputs = [
         {
-            key: 0, content: "Email", type: "text", placeholder: "Email", htmlfor: "Email"
+            key: 0, content: "Email", type: "text", placeholder: "Email", htmlfor: "Email", name: "Email"
         },
         {
-            key: 1, content: "Password", type: "password", placeholder: "Password", htmlfor: "Password"
+            key: 1, content: "Password", type: "password", placeholder: "Password", htmlfor: "Password", name: "Password"
         }
     ]
 
